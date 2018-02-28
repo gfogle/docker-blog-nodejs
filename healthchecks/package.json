@@ -1,0 +1,17 @@
+{
+  "name": "basic-node-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node_modules/.bin/nodemon --exec node --harmony --inspect=0.0.0.0:9229 server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "knex": "0.14.2",
+    "nodemon": "1.15.1",
+    "pg": "7.4.0"
+  }
+}
