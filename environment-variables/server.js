@@ -4,11 +4,11 @@ const knex = require('knex')({
   client: 'postgresql',
   connection: {
     debug: 'true',
-    host: 'localhost',
+    host: process.env.DB_HOST,
     port: 5432,
-    user: 'postgres',
-    password: '',
-    database: 'docker-blog'
+    user: process.env.DB_USER,
+    password: process.env.DB_PWD,
+    database: process.env.DB_NAME
   }
 });
 
