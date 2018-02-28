@@ -58,5 +58,6 @@ services:
         # as the value. If we say service_started, then if docker was able to
         # build the image and just start a container instance then we'll move on.
         # 
-        # Another option is service_healthy
+        # Another option is service_healthy which requires that a healthcheck
+        # property is configured above
         condition: service_healthy
